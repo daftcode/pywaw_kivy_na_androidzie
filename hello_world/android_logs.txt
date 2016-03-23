@@ -1,0 +1,939 @@
+--------- beginning of main
+V/audio_hw_primary(27453): out_standby: enter: usecase(1: low-latency-playback)
+V/audio_hw_primary(27453): stop_output_stream: enter: usecase(1: low-latency-playback)
+V/audio_hw_primary(27453): disable_audio_route: enter: usecase(1)
+V/audio_hw_primary(27453): disable_audio_route: reset mixer path: low-latency-playback
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia5
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): disable_audio_route: exit
+V/audio_hw_primary(27453): disable_snd_device: snd_device(2: speaker)
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SPK DRV Volume
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: RX7 Digital Volume
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: COMP0 Switch
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: RX7 MIX1 INP1, value: 0
+D/audio_route(27453): Setting mixer control: DAC1 Switch
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): stop_output_stream: exit: status(0)
+V/audio_hw_primary(27453): out_standby: exit
+D/InputReader(  882): Input event: value=1
+I/InputReader(  882): Touch event's action is 0x0 (deviceType=0) [pCnt=1, s=0.37848 ] when=1516195217253000
+I/InputDispatcher(  882): Delivering touch to (1179): action: 0x4, toolType: 1
+I/InputDispatcher(  882): Delivering touch to (1504): action: 0x0, toolType: 1
+D/ViewRootImpl( 1504): ViewPostImeInputStage ACTION_DOWN
+I/InputDispatcher(  882): Delivering touch to (1376): action: 0x0, toolType: 1
+--------- beginning of system
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  pkgName : com.sec.android.app.launcher@1
+D/InputReader(  882): Input event: value=0
+I/InputReader(  882): Touch event's action is 0x1 (deviceType=0) [pCnt=1, s=] when=1516195303564000
+I/InputDispatcher(  882): Delivering touch to (1504): action: 0x1, toolType: 1
+I/InputDispatcher(  882): Delivering touch to (1376): action: 0x1, toolType: 1
+I/AudioPolicyManager(27453): getAudioPolicyConfig: situation=1;device=0
+I/AudioPolicyManager(27453): getSituationVolume: isBTConnected:0 isHeadConnected:0
+V/AudioPolicyManager(27453): deviceInt = 0, situationInt = 1, situationVolume = 1.000000
+V/AudioPolicyManager(27453): getOutput() device 2, stream 1, samplingRate 0, format 0, channelMask 0, flags 3
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+V/AudioPolicyManager(27453): getOutput() returns output 2
+V/AudioPolicyManager(27453): getOutput() device 2, stream 1, samplingRate 0, format 0, channelMask 0, flags 3
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+V/AudioPolicyManager(27453): getOutput() returns output 2
+V/AudioPolicyManager(27453): getOutputForAttr() usage=13, content=4, tag=å7ièkièåûiè,“iè¨jèL9jèÏljèº†jè¨‘jèLkèÃ;kèLokèÏ¢kèå÷kè,
+V/AudioPolicyManager(27453): lè¨=lèLqlèÏälèåælè,ÚlèÃ%mèºYmè\çmèÃ¶mèl⁄mèÏnèåAnè|unè©nèº‹nè\oè¸Coè|woè¸™oèúﬁoè<pè‹Epè,tpèÃßpèl€pèqè|Bqèvqè™qè¨›qèLrèÏDrèåxrè,¨rè¨∫rèÏ»rè,◊rèE>»@ flags=00000000
+V/AudioPolicyManager(27453): getOutputForAttr() device 2, samplingRate 48000, format 1, channelMask 1, flags 4
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+V/AudioPolicyManager(27453): selectOutput() commonFlags for output 4, 0001
+V/AudioPolicyManager(27453): getOutput() returns output 4
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  tag : com.sec.android.app.launcher@1
+V/AudioPolicyManager(27453): startOutput() output 4, stream 1, session 12084
+V/AudioPolicyManager(27453): changeRefCount() stream 1, count 1
+V/AudioPolicyManager(27453): getNewOutputDevice() selected device 2
+V/AudioPolicyManager(27453): setOutputDevice() output 4 device 0002 delayMs 0
+V/AudioPolicyManager(27453): setOutputDevice() prevDevice 0002
+V/AudioPolicyManager(27453): setOutputDevice() setting same device 0002 or null device for output 4
+V/AudioPolicyManager(27453): releaseOutput() 4
+V/audio_hw_primary(27453): start_output_stream: enter: usecase(1: low-latency-playback) devices(0x2)
+V/audio_hw_primary(27453): select_devices: ENTER
+V/audio_hw_primary(27453): select_devices: usecase(normal)
+V/audio_hw_primary(27453): select_devices: usecase(PCM_PLAYBACK)
+V/msm8974_platform(27453): platform_get_output_snd_device: enter: output devices(0x2)
+V/msm8974_platform(27453): get_OUTPUT_snd_device: for Normal Playback
+V/msm8974_platform(27453): platform_get_output_snd_device: exit: snd_device(speaker)
+D/audio_hw_primary(27453): select_devices: out_snd_device(2: speaker)
+D/audio_hw_primary(27453): select_devices: in_snd_device(0: dummy)
+D/ACDB-LOADER(27453): ACDB -> send_audio_cal, acdb_id = 15, path =  0
+D/ACDB-LOADER(27453): ACDB -> send_adm_topology
+D/ACDB-LOADER(27453): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+D/ACDB-LOADER(27453): ACDB -> send_asm_topology
+D/ACDB-LOADER(27453): ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+D/ACDB-LOADER(27453): ACDB -> send_audtable
+D/ACDB-LOADER(27453): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+D/        (27453): ACDBFILE_MGR:Read the devices count as zero, please check the acdb file
+D/ACDB-LOADER(27453): ACDB -> AUDIO_SET_AUDPROC_CAL
+D/ACDB-LOADER(27453): ACDB -> send_audvoltable
+D/ACDB-LOADER(27453): ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE
+D/        (27453): ACDBFILE_MGR:Read the devices count as zero, please check the acdb file
+D/ACDB-LOADER(27453): ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+D/ACDB-LOADER(27453): ACDB -> send_afe_cal
+D/ACDB-LOADER(27453): ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+D/        (27453): ACDBFILE_MGR:Read the devices count as zero, please check the acdb file
+D/ACDB-LOADER(27453): ACDB -> AUDIO_SET_AFE_CAL
+V/audio_hw_primary(27453): enable_snd_device: snd_device(2: speaker, speaker)
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SPK DRV Volume
+D/audio_route(27453): Setting mixer control: value: 8
+D/audio_route(27453): Setting mixer control: RX7 Digital Volume
+D/audio_route(27453): Setting mixer control: value: 79
+D/audio_route(27453): Setting mixer control: COMP0 Switch
+D/audio_route(27453): Setting mixer control: value: 1
+D/audio_route(27453): Setting mixer control: RX7 MIX1 INP1, value: 5
+D/audio_route(27453): Setting mixer control: DAC1 Switch
+D/audio_route(27453): Setting mixer control: value: 1
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): enable_audio_route: enter: usecase(1)
+V/audio_hw_primary(27453): enable_audio_route: apply mixer path: low-latency-playback
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia5
+D/audio_route(27453): Setting mixer control: value: 1
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): enable_audio_route: exit
+V/audio_hw_primary(27453): start_output_stream: Opening PCM device card_id(0) device_id(15)
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  pkgName : LAUNCHER_APP_BOOSTER_CPU@6151
+V/audio_hw_primary(27453): start_output_stream: exit
+I/Timeline( 1504): Timeline: Activity_launch_request id:org.test.hello.kivy.world time:1516195344
+E/PersonaManagerService(  882): inState():  stateMachine is null !!
+V/ApplicationPolicy(  882): isApplicationStateBlocked userId 0 pkgname org.test.hello.kivy.world
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  pkgName : LAUNCHER_APP_BOOSTER_CPU@12
+D/ResourcesManager(  882): creating new AssetManager and set to /data/app/org.test.hello.kivy.world-2/base.apk
+I/ActivityManager(  882): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.test.hello.kivy.world/org.renpy.android.PythonActivity} from uid 10009 on display 0
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1958400  uid : 1000  pid : 882  pkgName : ACTIVITY_RESUME_BOOSTER@6
+W/ActivityManager(  882): mDVFSHelper.acquire()
+D/FocusedStackFrame(  882): Set to : 0
+D/Launcher.HomeView( 1504): onPause
+D/Launcher( 1504): Launcher::setSystemUiTransparency(): getSystemUiVisibility() after setting  = 40000000
+V/TaskCloserActivity(10984): TaskCloserActivity onReceive() - com.sec.android.intent.action.HOME_PAUSE
+E/ActivityManager(  882): checkUser: useridlist=null, currentuser=0
+E/ActivityManager(  882): checkUser: useridlist=null, currentuser=0
+E/ActivityManager(  882): checkUser: useridlist=null, currentuser=0
+E/ActivityManager(  882): checkUser: useridlist=null, currentuser=0
+E/Zygote  (11223): MountEmulatedStorage()
+E/Zygote  (11223): v2
+V/BitmapFactory(  882): DecodeImagePath(decodeResourceStream3) : res/drawable/icon.png
+I/libpersona(11223): KNOX_SDCARD checking this for 10342
+I/libpersona(11223): KNOX_SDCARD not a persona
+I/ActivityManager(  882): Start proc org.test.hello.kivy.world:python for activity org.test.hello.kivy.world/org.renpy.android.PythonActivity: pid=11223 uid=10342 gids={50342, 9997, 1028, 1015} abi=armeabi
+I/SELinux (11223): Function: selinux_compare_spd_ram, SPD-policy is existed. and_ver=SEPF_SM-G900F_5.0 ver=27
+I/SELinux (11223): Function: selinux_compare_spd_ram , priority [2] , priority version is VE=SEPF_SM-G900F_5.0-1_0032
+E/SELinux (11223): [DEBUG] get_category: variable seinfo: default sensitivity: NULL, cateogry: NULL
+I/art     (11223): Late-enabling -Xcheck:jni
+I/SurfaceFlinger(  259): id=26010 createSurf (1080x1920),1 flag=404, Starting org.test.hello.kivy.world
+V/BitmapFactory(  882): DecodeImagePath(decodeResourceStream3) : res/drawable-xxhdpi-v4/tw_ic_menu_moreoverflow_mtrl.png
+D/TimaKeyStoreProvider(11223): TimaSignature is unavailable
+D/ActivityThread(11223): Added TimaKeyStore provider
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, mbResultFaceDectection: false
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, Rotation: -1
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, mbResultFaceDectection: false
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, Rotation: -1
+D/InputDispatcher(  882): setInputDispatchMode: enabled=1, frozen=1
+I/SurfaceFlinger(  259): id=26011 createSurf (1080x1920),2 flag=4, ScreenshotSurface
+V/WindowManager(  882): rotationForOrientationLw(orient=0, last=0); user=0  sensorRotation=-1 mLidState=-1 mDockMode=0 mHdmiPlugged=false
+D/SamsungWindowManager(  882): setRotationLw() : rotation=1
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  pkgName : ROTATION_BOOSTER@36
+I/SurfaceFlinger(  259): Disp[0] Orientation 0=>1
+I/ActivityManager(  882): Config changes=480 {0 1.0 260mcc1mnc pl_PL ldltr sw360dp w640dp h335dp 480dpi nrml long land finger -keyb/v/h -nav/h s.2532}
+D/Mms/MmsApp( 6506): [start]    onConfigurationChanged(), newConfig = {0 1.0 260mcc1mnc pl_PL ldltr sw360dp w640dp h335dp 480dpi nrml long land finger -keyb/v/h -nav/h s.2532} consume time = 374585.832149
+D/Mms/MmsApp( 6506): [end]    onConfigurationChanged(), newConfig = {0 1.0 260mcc1mnc pl_PL ldltr sw360dp w640dp h335dp 480dpi nrml long land finger -keyb/v/h -nav/h s.2532} consume time = 0.197656
+D/MultiPhoneWindow( 6506): onMultiWindowConfigurationChanged com.android.mms/com.android.mms.ui.ConversationComposeroldRect=Rect(0, 0 - 1080, 1920)
+V/ActivityManager(  882): Display changed displayId=0
+I/SamsungIME(10405): [Before] hardKeyboardHidden(2) keyboardType(1)
+I/SamsungIME(10405):          mHwKeyboardShown [isHWKeyboardOpen()] = false --> false
+E/SamsungIME(10405):          isHWKeyboardConnected() = false --> false
+I/SamsungIME(10405): [hasToCallSuper] true
+D/MultiPhoneWindow( 8891): onMultiWindowConfigurationChanged com.adobe.reader/com.adobe.reader.viewer.ARViewerActivityoldRect=Rect(0, 0 - 1080, 1920)
+D/MultiPhoneWindow( 3828): onMultiWindowConfigurationChanged com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivityoldRect=Rect(0, 0 - 1080, 1920)
+D/SamsungIME(10405): Dismiss ExpandCandiate
+E/SamsungIME(10405): AbstractCandidateLayout-setCandidates finished : 0
+D/Recents_AlternateRecentsComponent( 1179): reloadHeaderBarLayout is getting called
+D/VolumePanel( 1179): ===== Start onConfigurationChanged =====
+D/VolumePanel( 1179): onConfigurationChanged : call updateLayout
+D/VolumePanel( 1179): ===== Start updateLayout =====
+D/Launcher.HomeView( 1504): onStop
+D/Recents_TaskViewHeader( 1179): onFinishInflate
+D/MultiPhoneWindow( 2223): onMultiWindowConfigurationChanged com.android.incallui/com.android.incallui.InCallActivityoldRect=Rect(0, 0 - 1080, 1920)
+D/StatusBar-QSPanel( 1179): updateButtonInfo mButtonWidth : 234 mColumns:8 orien: 2 displayWidth:1872
+D/LockPatternUtilsCache( 1179): getCarrierLockPlusMode()
+D/LockPatternUtilsCache( 1179): value : false
+D/StatusBarManagerService(  882): manageDisableList userId=0 what=0x0 pkg=WindowManager.LayoutParams
+I/InputReader(  882): Reconfiguring input devices.  changes=0x00000004
+I/InputReader(  882): Device reconfigured: id=9, name='sec_touchscreen', size 1080x1920, orientation 1, mode 1, display id 0
+I/SurfaceFlinger(  259): id=26001 Removed com.sec.android.app.launcher/com.android.launcher2.Launcher (3/9)
+I/SurfaceFlinger(  259): id=26001 Removed com.sec.android.app.launcher/com.android.launcher2.Launcher (-2/9)
+D/Launcher( 1504): onTrimMemory. Level: 20
+I/Adreno-EGL( 1376): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build:  ()
+I/Adreno-EGL( 1376): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL( 1376): Build Date: 03/03/15 Tue
+I/Adreno-EGL( 1376): Local Branch: LA.BF.1.1_RB1_20150108_025_1077123_1158499
+I/Adreno-EGL( 1376): Remote Branch: 
+I/Adreno-EGL( 1376): Local Patches: 
+I/Adreno-EGL( 1376): Reconstruct Branch: 
+E/SmartFaceService(  882): onReceive: android.intent.action.CONFIGURATION_CHANGED
+E/SmartFaceService(  882): mFolderCoverOpened: (true, true) -> true
+V/BitmapFactory( 5492): DecodeImagePath(decodeResourceStream3) : res/drawable-sw360dp-xxhdpi-v13/single_clock_day_1.qmg
+V/BitmapFactory( 5492): DecodeImagePath(decodeResourceStream3) : res/drawable-sw360dp-xxhdpi-v13/single_clock_day_6.qmg
+D/ResourcesManager(11223): creating new AssetManager and set to /data/app/org.test.hello.kivy.world-2/base.apk
+D/PanelView( 1179): There is/are notification(s) 
+I/TwSweepActionListView( 6506): closeAllActionBar call  sweepActionViewRemove
+D/MultiPhoneWindow( 8891): onMultiWindowConfigurationChanged com.adobe.reader/com.adobe.reader.viewer.ARSplitPaneActivityoldRect=Rect(0, 0 - 1080, 1920)
+D/ConnectivityService(  882): returning getNetworkInfo(networkType - 1) :[type: WIFI[] - WIFI, state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+D/StatusBar-QSPanel( 1179): setSingleLine:true
+D/StatusBar-QSPanel( 1179): updateButtonInfo mButtonWidth : 234 mColumns:8 orien: 2 displayWidth:1872
+W/Settings(  882): Setting tether_dun_required has moved from android.provider.Settings.System to android.provider.Settings.Global
+D/SettingsProvider(  882): name = tether_dun_required
+D/AudioService(  882): cameraSoundForced : false mCameraSoundForced : false
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 206
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+D/STATUSBAR-QSTileView( 1179): dynamicallyReduceTextSize: 234
+V/AudioPolicyManager(27453): stopOutput() output 4, stream 1, session 12084
+V/AudioPolicyManager(27453): changeRefCount() stream 1, count 0
+V/AudioPolicyManager(27453): getNewOutputDevice() selected device 0
+V/AudioPolicyManager(27453): setOutputDevice() output 4 device 0000 delayMs 100
+V/AudioPolicyManager(27453): setOutputDevice() prevDevice 0002
+V/AudioPolicyManager(27453): setOutputDevice() setting same device 0000 or null device for output 4
+D/VisualEffectParticleEffect( 1179): onConfigurationChanged
+D/VisualEffectParticleEffect( 1179): resetOrientation
+D/VisualEffectParticleEffect( 1179): stage : 1920.0 x 1080.0
+V/BitmapFactory( 5492): DecodeImagePath(decodeResourceStream3) : res/drawable-sw360dp-xxhdpi-v13/single_clock_day_colon.qmg
+V/BitmapFactory( 5492): DecodeImagePath(decodeResourceStream3) : res/drawable-sw360dp-xxhdpi-v13/single_clock_day_5.qmg
+D/StatusBar.NetworkController( 1179): Nothing, mRoamingIconId = 0
+D/StatusBar.NetworkController( 1179): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mobileLabel=Plus wifiLabel= emergencyOnly=false combinedLabel=Brak po≈Ç. internetowego mAirplaneMode=false mDataActivity=0 mPhoneSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mQSPhoneSignalIconId=0x7f020115/com.android.systemui:drawable/ic_qs_signal_4 mDataDirectionIconId=0x0/(null) mDataSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mDataTypeIconId=0x7f0202ae/com.android.systemui:drawable/stat_sys_data_connected_3g mQSDataTypeIconId=0x7f020114/com.android.systemui:drawable/ic_qs_signal_3g mNoSimIconId=0x0/(null) mWifiIconId=0x0/(null) mQSWifiIconId=0x0/(null) mWifiActivityIconId=0x7f020468/com.android.systemui:drawable/stat_sys_signal_inout mBluetoothTetherIconId=0x1080907/android:drawable/stat_sys_tether_bluetooth
+V/BitmapFactory( 5492): DecodeImagePath(decodeResourceStream3) : res/drawable-sw360dp-xxhdpi-v13/single_clock_day_3.qmg
+W/ResourceType(11223): No package identifier when getting value for resource number 0x00000000
+V/python  (11223): metadata fullscreen is1
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+I/AudioService(  882): getStreamVolume 2 index 10
+I/SDLSurface(11223): Surface will NOT be transparent
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+I/AudioService(  882): getStreamVolume 3 index 20
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+W/ResourceType( 1504): Failure getting entry for 0x7f020036 (t=1 e=54) (error -75)
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+I/AudioService(  882): getStreamVolume 5 index 0
+W/ImageView( 1504): Unable to find resource: 2130837558
+W/ImageView( 1504): android.content.res.Resources$NotFoundException: Resource ID #0x7f020036
+W/ImageView( 1504): 	at android.content.res.Resources.getValue(Resources.java:2329)
+W/ImageView( 1504): 	at android.content.res.Resources.getDrawable(Resources.java:1846)
+W/ImageView( 1504): 	at android.content.Context.getDrawable(Context.java:410)
+W/ImageView( 1504): 	at android.widget.ImageView.resolveUri(ImageView.java:752)
+W/ImageView( 1504): 	at android.widget.ImageView.setImageResource(ImageView.java:408)
+W/ImageView( 1504): 	at java.lang.reflect.Method.invoke(Native Method)
+W/ImageView( 1504): 	at java.lang.reflect.Method.invoke(Method.java:372)
+W/ImageView( 1504): 	at android.widget.RemoteViews$ReflectionAction.apply(RemoteViews.java:1349)
+W/ImageView( 1504): 	at android.widget.RemoteViews.performApply(RemoteViews.java:3108)
+W/ImageView( 1504): 	at android.widget.RemoteViews.reapply(RemoteViews.java:3099)
+W/ImageView( 1504): 	at android.appwidget.AppWidgetHostView.updateAppWidget(AppWidgetHostView.java:383)
+W/ImageView( 1504): 	at android.appwidget.AppWidgetHost.updateAppWidgetView(AppWidgetHost.java:379)
+W/ImageView( 1504): 	at android.appwidget.AppWidgetHost$UpdateHandler.handleMessage(AppWidgetHost.java:104)
+W/ImageView( 1504): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/ImageView( 1504): 	at android.os.Looper.loop(Looper.java:145)
+W/ImageView( 1504): 	at android.app.ActivityThread.main(ActivityThread.java:5832)
+W/ImageView( 1504): 	at java.lang.reflect.Method.invoke(Native Method)
+W/ImageView( 1504): 	at java.lang.reflect.Method.invoke(Method.java:372)
+W/ImageView( 1504): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+W/ImageView( 1504): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+V/AudioPolicyManager(27453): getOutputsForDevice device 0002 -> 0002
+I/AudioService(  882): getStreamVolume 1 index 0
+D/Activity(11223): performCreate Call secproduct feature valuefalse
+D/Activity(11223): performCreate Call debug elastic valuetrue
+V/Python  (11223): Extracting private assets.
+D/OpenGLRenderer(11223): Render dirty regions requested: true
+D/ActivityManager(  882): post active user change for 0
+D/KnoxTimeoutHandler(  882): postActiveUserChange for user 0
+D/KnoxTimeoutHandler(  882): handleActiveUserChange for user 0
+I/SurfaceFlinger(  259): id=26012 createSurf (1x1),1 flag=4, org.test.hello.kivy.world/org.renpy.android.PythonActivity
+I/Adreno-EGL(11223): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build:  ()
+I/Adreno-EGL(11223): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL(11223): Build Date: 03/03/15 Tue
+I/Adreno-EGL(11223): Local Branch: LA.BF.1.1_RB1_20150108_025_1077123_1158499
+I/Adreno-EGL(11223): Remote Branch: 
+I/Adreno-EGL(11223): Local Patches: 
+I/Adreno-EGL(11223): Reconstruct Branch: 
+I/OpenGLRenderer(11223): Initialized EGL, version 1.4
+I/OpenGLRenderer(11223): HWUI protection enabled for context ,  &this =0xaf922088 ,&mEglDisplay = 1 , &mEglConfig = 8 
+D/OpenGLRenderer(11223): Enabling debug mode 0
+I/SurfaceFlinger(  259): id=26013 createSurf (1920x1080),4 flag=404, SurfaceView
+I/SDLSurface(11223): Choose egl configuration
+I/SDLSurface(11223): Try to use graphics config R8G8B8A8S8
+W/SDLSurface(11223): Create egl surface
+I/python  (11223): extracting libpymodules.so
+I/python  (11223): presplash-fit is null
+I/python  (11223): presplash (fit=null) mx=1,875000,my=1,054688
+D/InputMethodManagerService(  882): windowGainedFocus mCurrentFocusedUserId - 0 and mSecureKeypadEnabled-false
+I/ActivityManager(  882): Displayed org.test.hello.kivy.world/org.renpy.android.PythonActivity: +440ms
+I/Timeline(  882): Timeline: Activity_windows_visible id: ActivityRecord{1ef06475 u0 org.test.hello.kivy.world/org.renpy.android.PythonActivity t11052} time:1516195807
+W/ContextImpl(  882): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1629 com.android.server.InputMethodManagerService$6.run:2728 java.lang.Thread.run:818 <bottom of call stack> <bottom of call stack> 
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1958400  uid : 1000  pid : 882  tag : ACTIVITY_RESUME_BOOSTER@6
+D/CustomFrequencyManagerService(  882): FrequencyrequestList.getNextMaxCPUCoreRequest, index: 0
+W/ActivityManager(  882): mDVFSHelper.release()
+D/CustomFrequencyManagerService(  882): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1958400  uid : 1000  pid : 882  pkgName : ACTIVITY_RESUME_BOOSTER@10
+I/SurfaceFlinger(  259): id=26010 Removed Starting org.test.hello.kivy.world (7/10)
+I/SurfaceFlinger(  259): id=26010 Removed Starting org.test.hello.kivy.world (-2/10)
+I/SurfaceFlinger(  259): id=26014 createSurf (2160x1920),-1 flag=20004, BlackSurface
+I/SurfaceFlinger(  259): id=26015 createSurf (1080x3840),-1 flag=20004, BlackSurface
+I/SurfaceFlinger(  259): id=26016 createSurf (2160x1920),-1 flag=20004, BlackSurface
+I/SurfaceFlinger(  259): id=26017 createSurf (1080x3840),-1 flag=20004, BlackSurface
+D/InputDispatcher(  882): setInputDispatchMode: enabled=1, frozen=0
+I/WindowManager(  882): Screen frozen for +425ms due to Window{3bbeaa6b u0 Starting org.test.hello.kivy.world}
+I/SurfaceFlinger(  259): id=26011 Removed ScreenshotSurface (9/13)
+I/SurfaceFlinger(  259): id=26011 Removed ScreenshotSurface (-2/13)
+I/SurfaceFlinger(  259): id=26014 Removed BlackSurface (9/12)
+I/SurfaceFlinger(  259): id=26014 Removed BlackSurface (-2/12)
+I/SurfaceFlinger(  259): id=26015 Removed BlackSurface (9/11)
+I/SurfaceFlinger(  259): id=26015 Removed BlackSurface (-2/11)
+I/SurfaceFlinger(  259): id=26016 Removed BlackSurface (9/10)
+I/SurfaceFlinger(  259): id=26016 Removed BlackSurface (-2/10)
+I/SurfaceFlinger(  259): id=26017 Removed BlackSurface (9/9)
+I/SurfaceFlinger(  259): id=26017 Removed BlackSurface (-2/9)
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, mbResultFaceDectection: false
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, Rotation: -1
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, mbResultFaceDectection: false
+V/WindowOrientationListener(  882): mSContextAutoRotationListener.getProposedRotation, Rotation: -1
+V/WindowManager(  882): rotationForOrientationLw(orient=0, last=1); user=0  sensorRotation=-1 mLidState=-1 mDockMode=0 mHdmiPlugged=false
+I/python  (11223): extracting include/
+I/python  (11223): extracting include/python2.7/
+I/python  (11223): extracting include/python2.7/pyconfig.h
+I/python  (11223): extracting lib/
+I/python  (11223): extracting lib/python27.zip
+I/art     (  882): Explicit concurrent mark sweep GC freed 110828(6MB) AllocSpace objects, 39(1939KB) LOS objects, 20% free, 62MB/78MB, paused 1.500ms total 205.197ms
+I/Timeline(11223): Timeline: Activity_idle id: android.os.BinderProxy@1594c050 time:1516195995
+W/IInputConnectionWrapper( 1504): showStatusIcon on inactive InputConnection
+E/asset   (  882): !@+++ closed '/mnt/asec/com.skype.raider-3/base.apk' by system_server(FinalizerDaemon)
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1958400  uid : 1000  pid : 882  tag : ACTIVITY_RESUME_BOOSTER@10
+I/python  (11223): extracting lib/python2.7/
+I/python  (11223): extracting lib/python2.7/lib-dynload/
+I/python  (11223): extracting lib/python2.7/lib-dynload/_io.so
+I/python  (11223): extracting lib/python2.7/lib-dynload/unicodedata.so
+I/python  (11223): extracting lib/python2.7/lib-dynload/future_builtins.so
+I/python  (11223): extracting lib/python2.7/lib-dynload/syslog.so
+I/python  (11223): extracting lib/python2.7/lib-dynload/_ctypes.so
+I/python  (11223): extracting lib/python2.7/config/
+I/python  (11223): extracting lib/python2.7/config/Setup.local
+I/python  (11223): extracting lib/python2.7/config/Setup.config
+I/python  (11223): extracting lib/python2.7/config/install-sh
+I/python  (11223): extracting lib/python2.7/config/Setup
+I/python  (11223): extracting lib/python2.7/config/Makefile
+I/python  (11223): extracting lib/python2.7/config/config.c.in
+I/python  (11223): extracting lib/python2.7/config/config.c
+I/python  (11223): extracting lib/python2.7/site-packages/
+I/python  (11223): extracting lib/python2.7/site-packages/jnius_config.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/README
+I/python  (11223): extracting lib/python2.7/site-packages/six.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/compat.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/surface.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/_arraysurfarray.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/color.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/time.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/base.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/pygame.ico
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/midi.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/pkgdata.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/mask.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/locals.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/rect.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/joystick.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/sprite.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/pygame_icon.tiff
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/event.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/mouse.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/rwobject.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/transform.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/surflock.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/gfxdraw.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/pixelarray.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/sysfont.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/cursors.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/imageext.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/overlay.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/draw.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/image.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/colordict.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/key.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/display.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/constants.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/font.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/fastevent.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/bufferproxy.so
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/version.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/threads/
+I/python  (11223): extracting lib/python2.7/site-packages/pygame/threads/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/jnius/
+I/python  (11223): extracting lib/python2.7/site-packages/jnius/reflect.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/jnius/signatures.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/jnius/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/jnius/jnius.so
+I/python  (11223): extracting lib/python2.7/site-packages/android/
+I/python  (11223): extracting lib/python2.7/site-packages/android/_android_billing.so
+I/python  (11223): extracting lib/python2.7/site-packages/android/activity.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/android/_android_sound.so
+I/python  (11223): extracting lib/python2.7/site-packages/android/_android.so
+I/python  (11223): extracting lib/python2.7/site-packages/android/runnable.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/android/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/android/mixer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/android/broadcast.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/android/billing.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/multistroke.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/compat.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/parser.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/_event.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/vector.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/factory.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/app.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/resources.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/metrics.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/utils.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/logger.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/base.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lang.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/loader.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/clock.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/cache.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/atlas.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/factory_registers.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/weakmethod.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/config.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/support.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/animation.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/context.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/interactive.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/properties.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/event.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/weakproxy.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/geometry.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/setupconfig.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/_event.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/gesture.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/properties.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_ffpyplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_sdl2.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_pygame.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_gif.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_dds.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_tex.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/image/img_pil.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_gstplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_ffpyplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_pygame.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_avplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_pygst.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/audio/audio_gi.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_gstplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_null.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_pygst.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_ffmpeg.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_gi.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/video/video_ffpyplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_gtk3.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_nspaste.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_xsel.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_winctypes.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_xclip.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/_clipboard_ext.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_sdl2.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_dummy.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_android.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_dbusklipper.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/clipboard/clipboard_pygame.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/camera_opencv.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/camera_gi.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/camera_pygst.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/camera/camera_android.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/gl/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/gl/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/window/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/window/window_pygame.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/window/window_egl_rpi.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/window/window_sdl2.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/window/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/text_pil.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/text_sdl2.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/text_layout.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/text_pygame.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/text_layout.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/text/markup.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/spelling/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/spelling/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/core/spelling/spelling_enchant.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/garden/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/garden/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/provider.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/motionevent.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/recorder.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/factory.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/shape.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/doubletap.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/tripletap.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/ignorelist.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/calibration.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/dejitter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/postproc/retaintouch.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/androidjoystick.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/linuxwacom.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/tuio.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/mouse.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/input/providers/leapfinger.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/extras/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/extras/highlight.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/extras/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/storage/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/storage/dictstore.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/storage/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/storage/jsonstore.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/storage/redisstore.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/listadapter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/dictadapter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/simplelistadapter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/args_converters.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/models.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/adapters/adapter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/touchring.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/recorder.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/keybinding.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/_webdebugger.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/console.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/webdebugger.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/screen.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/monitor.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/modules/inspector.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_layout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_button.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/unicode_files.zip
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/common.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_widget_walk.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_filechooser_unicode.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_boxlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_clipboard.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_issue_1091.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_multistroke.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_anchorlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_stacklayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_storage.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_vector.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_widget.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_listview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/testkv.kv
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/unicode_font.zip
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_fonts.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_widget.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_graphics.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_adapters.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_gridlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_knspace.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/visual_test_label.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_selection.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_filechooser.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_issue_883.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_app.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/perf_test_textinput.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_urlrequest.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_uix_relativelayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_issue_599.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_issue_1084.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_doc_gallery.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_invalid_lang.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_clock.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_video.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/sample1.ogg
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_lang_complex.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_image.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_animations.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_issue_609.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_audio.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_utils.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_lang.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/tests/test_properties.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/buffer.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/context.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vbo.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/opengl_utils.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/img_tools.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/shader.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/gl_redirect.h
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vertex.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/shader.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/compiler.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/opcodes.pxi
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  tag : LAUNCHER_APP_BOOSTER_CPU@6151
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vbo.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/opengl_utils.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/context_instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/svg.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vertex_instructions.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/config.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/gl_instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/gl_debug_logger.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/common_subset.h
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/fbo.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/opengl_utils_def.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/c_opengl_debug.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/stencil_instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/gl2platform.h
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/tesselator.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/c_opengl.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/opengl.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/stencil_instructions.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/svg.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/buffer.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/context_instructions.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/tesselator.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/c_opengl_debug.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/compiler.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/context.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/texture.pxd
+D/CustomFrequencyManagerService(  882): FrequencyrequestList.getNextMaxCPUCoreRequest, index: 1
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/common.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/transformation.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/transformation.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/scissor_instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/fbo.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vertex_instructions_line.pxi
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/texture.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/config.h
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vertex.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/instructions.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/khrplatform.h
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/graphics/vertex_instructions.so
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/ext/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/ext/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/deps/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/deps/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/dampedscroll.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/opacityscroll.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/scroll.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/kinetic.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/effects/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/__init__.pyo
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  tag : LAUNCHER_APP_BOOSTER_CPU@12
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/ddsfile.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/mtdev.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/gstplayer/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/gstplayer/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/osc/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/osc/OSC.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/osc/oscAPI.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/osc/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/vidcore_lite/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/vidcore_lite/bcm.pxd
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/lib/vidcore_lite/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/style.kv
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/settings_kivy.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/qwertz.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/qwerty.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/en_US.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/fr_CH.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/azerty.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/keyboards/de_CH.json
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/default.vs
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/header.vs
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/default.fs
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/default.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/glsl/header.fs
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/defaulttheme.atlas
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/defaulttheme-0.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/image-loading.gif
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/testpattern.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/images/background.jpg
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-32.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-24.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-64.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-128.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-48.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-16.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-256.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/logo/kivy-icon-512.png
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/RobotoMono-Regular.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/Roboto-Italic.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/Roboto-Bold.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/DejaVuSans.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/Roboto-Regular.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/data/fonts/Roboto-BoldItalic.ttf
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/network/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/network/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/network/urlrequest.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/listview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/video.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/togglebutton.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/spinner.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/camera.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/boxlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/slider.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/button.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/abstractview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/gridlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/textinput.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/videoplayer.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/rst.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/selectableview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/pagelayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/switch.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/stencilview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/accordion.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/colorpicker.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/widget.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/carousel.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/image.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/splitter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/filechooser.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/bubble.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/checkbox.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/screenmanager.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/gesturesurface.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/scatterlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/label.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/floatlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/layout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/codeinput.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/actionbar.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/settings.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/scrollview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/modalview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/vkeyboard.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/effectwidget.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/treeview.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/popup.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/dropdown.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/anchorlayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/relativelayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/progressbar.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/tabbedpanel.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/scatter.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/stacklayout.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/sandbox.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/togglebutton.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/button.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/drag.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/codenavigation.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/focus.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/__init__.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/compoundselection.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/emacs.pyo
+I/python  (11223): extracting lib/python2.7/site-packages/kivy/uix/behaviors/knspace.pyo
+I/python  (11223): extracting sitecustomize.pyo
+I/python  (11223): extracting main.pyo
+W/ResourceType(11223): No package identifier when getting value for resource number 0x00000000
+E/art     (11223): dlopen("/data/data/org.test.hello.kivy.world/files/lib/python2.7/lib-dynload/_sqlite3.so", RTLD_LAZY) failed: dlopen failed: library "/data/data/org.test.hello.kivy.world/files/lib/python2.7/lib-dynload/_sqlite3.so" not found
+E/art     (11223): dlopen("/data/data/org.test.hello.kivy.world/files/lib/python2.7/lib-dynload/_imaging.so", RTLD_LAZY) failed: dlopen failed: library "/data/data/org.test.hello.kivy.world/files/lib/python2.7/lib-dynload/_imaging.so" not found
+I/python  (11223): Starting audio thread
+I/libSDL  (11223): Physical screen resolution is 1920x1080
+I/python  (11223): Initialize Python for Android
+D/ResourcesManager(  882): creating new AssetManager and set to /data/app/org.test.hello.kivy.world-2/base.apk
+I/python  (11223): ['/data/data/org.test.hello.kivy.world/files/lib/python2.7/site-packages', '/data/data/org.test.hello.kivy.world/files/lib/site-python']
+I/python  (11223): Android path ['/data/data/org.test.hello.kivy.world/files/lib/python27.zip', '/data/data/org.test.hello.kivy.world/files/lib/python2.7', '/data/data/org.test.hello.kivy.world/files/lib/python2.7/lib-dynload', '/data/data/org.test.hello.kivy.world/files/lib/python2.7/site-packages', '/data/data/org.test.hello.kivy.world/files', '/data/data/org.test.hello.kivy.world/files/_applibs']
+I/python  (11223): Android kivy bootstrap done. __name__ is __main__
+I/python  (11223): Run user program, change dir and execute main.py
+I/python  (11223): [WARNING           ] [Config      ] Older configuration version detected (0 instead of 14)
+I/python  (11223): [WARNING           ] [Config      ] Upgrading configuration in progress.
+I/python  (11223): [INFO              ] [Logger      ] Record log in /data/data/org.test.hello.kivy.world/files/.kivy/logs/kivy_16-03-11_0.txt
+I/python  (11223): [INFO              ] [Kivy        ] v1.9.1
+I/python  (11223): [INFO              ] [Python      ] v2.7.2 (default, Mar 11 2016, 14:59:44) 
+I/python  (11223): [GCC 4.8]
+D/ActivityManager(  882): bindService callerProcessName:com.mapfactor.navigator, calleePkgName: com.google.android.gms, action: com.google.android.gms.analytics.service.START
+I/python  (11223): [INFO              ] [Factory     ] 179 symbols loaded
+D/ActivityManager(  882): bindService callerProcessName:com.mapfactor.navigator, calleePkgName: com.google.android.gms, action: com.google.android.gms.analytics.service.START
+I/python  (11223):  /data/data/org.test.hello.kivy.world/files/lib/python2.7/site-packages/kivy/core/image/img_pygame.py:13: RuntimeWarning: import cdrom: No module named cdrom
+I/python  (11223):  (ImportError: No module named cdrom)
+I/python  (11223): [INFO              ] [Image       ] Providers: img_tex, img_dds, img_gif, img_pygame (img_pil, img_ffpyplayer ignored)
+I/python  (11223): [INFO              ] [Text        ] Provider: pygame
+D/CustomFrequencyManagerService(  882): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 882  tag : ROTATION_BOOSTER@36
+E/audit   ( 2157): type=1400 msg=audit(1457711584.192:330310): avc:  denied  { read } for  pid=11261 comm="qrngd" name="hw_random" dev="tmpfs" ino=10454 scontext=u:r:qrngd:s0 tcontext=u:object_r:hw_random_device:s0 tclass=chr_file
+E/audit   ( 2157):  SEPF_SM-G900F_5.0-1_0032
+E/audit   ( 2157): 
+E/audit   ( 2157): type=1300 msg=audit(1457711584.192:330310): arch=40000028 syscall=322 per=800000 success=no exit=-13 a0=ffffff9c a1=bedfb6a0 a2=20000 a3=0 items=1 ppid=1 pid=11261 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="qrngd" exe="/system/bin/qrngd" subj=u:r:qrngd:s0 key=(null)
+E/audit   ( 2157): type=1307 msg=audit(1457711584.192:330310):  cwd="/"
+E/audit   ( 2157): type=1302 msg=audit(1457711584.192:330310): item=0 name="/dev/hw_random" inode=10454 dev=00:0b mode=020640 ouid=0 ogid=1000 rdev=0a:b7 obj=u:object_r:hw_random_device:s0
+E/audit   ( 2157): type=1320 msg=audit(1457711584.192:330310): 
+D/SecurityLogAgent:SEDenialService(  882): Got Modify Event and sending Denial Intent foraudit.log
+E/auditd  ( 2157): In denial and Property audit_ondenial is set to 1 
+D/SecurityLogAgent:SEDenialService(  882): audit.ondenial set to 0 after sending samsung.intent.action.knox.DENIAL_NOTIFICATION intent
+D/SecurityLogAgent(10821):  SeDenialReceiver : Intent Received : samsung.intent.action.knox.DENIAL_NOTIFICATION
+D/SecurityLogAgent(10821):  SeDenialReceiver : File path = null
+W/ContextImpl(  882): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1629 com.android.server.SEDenialService$AuditFileObserver.onEvent:76 android.os.FileObserver$ObserverThread.onEvent:122 android.os.FileObserver$ObserverThread.observe:-2 android.os.FileObserver$ObserverThread.run:85 
+I/art     (  882): Explicit concurrent mark sweep GC freed 14337(764KB) AllocSpace objects, 3(677KB) LOS objects, 20% free, 61MB/77MB, paused 1.519ms total 134.408ms
+I/python  (11223): [INFO              ] [Window      ] Provider: pygame
+I/libSDL  (11223): SDL_SetVideoMode(): application requested mode 1920x1080
+I/python  (11223): [INFO              ] [GL          ] OpenGL version <OpenGL ES 3.0 V@84.0 AU@  (CL@)>
+I/python  (11223): [INFO              ] [GL          ] OpenGL vendor <Qualcomm>
+I/python  (11223): [INFO              ] [GL          ] OpenGL renderer <Adreno (TM) 330>
+I/python  (11223): [INFO              ] [GL          ] OpenGL parsed version: 3, 0
+I/python  (11223): [INFO              ] [GL          ] Texture max size <4096>
+I/python  (11223): [INFO              ] [GL          ] Texture max units <16>
+I/python  (11223): [INFO              ] [Shader      ] program: <--From Vertex Shader:
+I/python  (11223): --From Fragment Shader:
+I/python  (11223): Link was successful.>
+V/audio_hw_primary(27453): out_standby: enter: usecase(1: low-latency-playback)
+V/audio_hw_primary(27453): stop_output_stream: enter: usecase(1: low-latency-playback)
+V/audio_hw_primary(27453): disable_audio_route: enter: usecase(1)
+V/audio_hw_primary(27453): disable_audio_route: reset mixer path: low-latency-playback
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia5
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): disable_audio_route: exit
+V/audio_hw_primary(27453): disable_snd_device: snd_device(2: speaker)
+D/audio_route(27453): ++++ audio_route_update_mixer ==============
+D/audio_route(27453): Setting mixer control: SPK DRV Volume
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: RX7 Digital Volume
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: COMP0 Switch
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): Setting mixer control: RX7 MIX1 INP1, value: 0
+D/audio_route(27453): Setting mixer control: DAC1 Switch
+D/audio_route(27453): Setting mixer control: value: 0
+D/audio_route(27453): ------ audio_route_update_mixer ==============
+V/audio_hw_primary(27453): stop_output_stream: exit: status(0)
+V/audio_hw_primary(27453): out_standby: exit
+I/python  (11223): [INFO              ] [Support     ] Android install hooks
+I/python  (11223): [INFO              ] [Window      ] virtual keyboard not allowed, single mode, not docked
+I/python  (11223): [INFO              ] [OSC         ] using <thread> for socket
+I/python  (11223): [INFO              ] [Base        ] Start application main loop
+I/python  (11223): [INFO              ] [Android     ] found 17 joystick
+I/python  (11223): [INFO              ] [Android     ] create joystick <0>
+I/python  (11223): [INFO              ] [Android     ] discard joystick <0> cause no button
+I/python  (11223): [INFO              ] [Android     ] create joystick <1>
+I/python  (11223): [INFO              ] [Android     ] create joystick <2>
+I/python  (11223): [INFO              ] [Android     ] create joystick <3>
+I/python  (11223): [INFO              ] [Android     ] create joystick <4>
+I/python  (11223): [INFO              ] [Android     ] create joystick <5>
+I/python  (11223): [INFO              ] [Android     ] create joystick <6>
+I/python  (11223): [INFO              ] [Android     ] create joystick <7>
+I/python  (11223): [INFO              ] [Android     ] create joystick <8>
+I/python  (11223): [INFO              ] [Android     ] create joystick <9>
+I/python  (11223): [INFO              ] [Android     ] create joystick <10>
+I/python  (11223): [INFO              ] [Android     ] create joystick <11>
+I/python  (11223): [INFO              ] [Android     ] create joystick <12>
+I/python  (11223): [INFO              ] [Android     ] create joystick <13>
+I/python  (11223): [INFO              ] [Android     ] create joystick <14>
+I/python  (11223): [INFO              ] [Android     ] create joystick <15>
+I/python  (11223): [INFO              ] [Android     ] create joystick <16>
+I/python  (11223): [INFO              ] [GL          ] NPOT texture support is available
+D/BatteryService(  882): level:100, scale:100, status:5, health:2, present:true, voltage: 4382, temperature: 288, technology: Li-ion, AC powered:false, USB powered:true, Wireless powered:false, icon:17303749, invalid charger:0
+D/BatteryService(  882): online:6, current avg:900, charge type:1, power sharing:false, high voltage charger:false, capacity:280000
+D/BatteryService(  882): Sending ACTION_BATTERY_CHANGED.
+D/MotionRecognitionService(  882):   mReceiver.onReceive : ACTION_BATTERY_CHANGED
+I/MotionRecognitionService(  882): Plugged
+I/MotionRecognitionService(  882): setPowerConnected  = true
+D/KeyguardUpdateMonitor( 1179): received broadcast android.intent.action.BATTERY_CHANGED
+D/KeyguardUpdateMonitor( 1179): handleBatteryUpdate
+D/STATUSBAR-PhoneStatusBar( 1179):  mBrightnessEnablebySettings = true mBrightnessEnablebyBattery = true mBrightnessEnablebyDisableFlag = true mPmsBrightnessEnablebySettings = true
+D/BatteryMeterView( 1179): ACTION_BATTERY_CHANGED : level:100 status:5 health:2
+D/BatteryMeterView( 1179): ACTION_BATTERY_CHANGED : level:100 status:5 health:2
+D/BatteryMeterView( 1179): ACTION_BATTERY_CHANGED : level:100 status:5 health:2
+D/TaskPersister(  882): removeObsoleteFile: deleting file=11051_task.xml
+D/SSRM:m  (  882): SIOP:: AP = 330, PST = 307, CUR = 900
+E/audit   ( 2157): type=1400 msg=audit(1457711589.362:330311): avc:  denied  { read } for  pid=11263 comm="qrngd" name="hw_random" dev="tmpfs" ino=10454 scontext=u:r:qrngd:s0 tcontext=u:object_r:hw_random_device:s0 tclass=chr_file
+E/audit   ( 2157):  SEPF_SM-G900F_5.0-1_0032
+E/audit   ( 2157): 
+D/SecurityLogAgent:SEDenialService(  882): Got Modify Event and sending Denial Intent foraudit.log
+E/audit   ( 2157): type=1300 msg=audit(1457711589.362:330311): arch=40000028 syscall=322 per=800000 success=no exit=-13 a0=ffffff9c a1=be9dd6a0 a2=20000 a3=0 items=1 ppid=1 pid=11263 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="qrngd" exe="/system/bin/qrngd" subj=u:r:qrngd:s0 key=(null)
+E/audit   ( 2157): type=1307 msg=audit(1457711589.362:330311):  cwd="/"
+E/audit   ( 2157): type=1302 msg=audit(1457711589.362:330311): item=0 name="/dev/hw_random" inode=10454 dev=00:0b mode=020640 ouid=0 ogid=1000 rdev=0a:b7 obj=u:object_r:hw_random_device:s0
+E/audit   ( 2157): type=1320 msg=audit(1457711589.362:330311): 
+D/SecurityLogAgent:SEDenialService(  882): audit.ondenial set to 0 after sending samsung.intent.action.knox.DENIAL_NOTIFICATION intent
+E/auditd  ( 2157): In denial and Property audit_ondenial is set to 1 
+W/ContextImpl(  882): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1629 com.android.server.SEDenialService$AuditFileObserver.onEvent:76 android.os.FileObserver$ObserverThread.onEvent:122 android.os.FileObserver$ObserverThread.observe:-2 android.os.FileObserver$ObserverThread.run:85 
+D/SecurityLogAgent(10821):  SeDenialReceiver : Intent Received : samsung.intent.action.knox.DENIAL_NOTIFICATION
+D/SecurityLogAgent(10821):  SeDenialReceiver : File path = null
+D/StatusBar.NetworkController( 1179): onSignalStrengthsChanged signalStrength=SignalStrength: 14 99 -120 -160 -120 -1 -1 99 2147483647 2147483647 2147483647 -1 2147483647 0x4 gsm|lte level=4
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength: hasService=true ss=SignalStrength: 14 99 -120 -160 -120 -1 -1 99 2147483647 2147483647 2147483647 -1 2147483647 0x4 gsm|lte
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength: iconLevel=4
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength, No signal level. mPhoneSignalIconId = com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mDataSignalIconId = com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mQSPhoneSignalIconId = com.android.systemui:drawable/ic_qs_signal_4 mContentDescriptionPhoneSignal = Pe≈Çen sygna≈Ç telefonu
+D/StatusBar.NetworkController( 1179): Nothing, mRoamingIconId = 0
+D/StatusBar.NetworkController( 1179): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mobileLabel=Plus wifiLabel= emergencyOnly=false combinedLabel=Brak po≈Ç. internetowego mAirplaneMode=false mDataActivity=0 mPhoneSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mQSPhoneSignalIconId=0x7f020115/com.android.systemui:drawable/ic_qs_signal_4 mDataDirectionIconId=0x0/(null) mDataSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mDataTypeIconId=0x7f0202ae/com.android.systemui:drawable/stat_sys_data_connected_3g mQSDataTypeIconId=0x7f020114/com.android.systemui:drawable/ic_qs_signal_3g mNoSimIconId=0x0/(null) mWifiIconId=0x0/(null) mQSWifiIconId=0x0/(null) mWifiActivityIconId=0x7f020468/com.android.systemui:drawable/stat_sys_signal_inout mBluetoothTetherIconId=0x1080907/android:drawable/stat_sys_tether_bluetooth
+E/Watchdog(  882): !@Sync 50530
+I/ActivityManager(  882): Waited long enough for: ServiceRecord{291a7005 u0 com.mapfactor.navigator/.notifications.NotificationsService}
+D/SecurityLogAgent:SEDenialService(  882): Got Modify Event and sending Denial Intent foraudit.log
+E/audit   ( 2157): type=1400 msg=audit(1457711594.392:330312): avc:  denied  { read } for  pid=11275 comm="qrngd" name="hw_random" dev="tmpfs" ino=10454 scontext=u:r:qrngd:s0 tcontext=u:object_r:hw_random_device:s0 tclass=chr_file
+E/audit   ( 2157):  SEPF_SM-G900F_5.0-1_0032
+E/audit   ( 2157): 
+E/audit   ( 2157): type=1300 msg=audit(1457711594.392:330312): arch=40000028 syscall=322 per=800000 success=no exit=-13 a0=ffffff9c a1=bedb16a0 a2=20000 a3=0 items=1 ppid=1 pid=11275 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="qrngd" exe="/system/bin/qrngd" subj=u:r:qrngd:s0 key=(null)
+E/audit   ( 2157): type=1307 msg=audit(1457711594.392:330312):  cwd="/"
+E/audit   ( 2157): type=1302 msg=audit(1457711594.392:330312): item=0 name="/dev/hw_random" inode=10454 dev=00:0b mode=020640 ouid=0 ogid=1000 rdev=0a:b7 obj=u:object_r:hw_random_device:s0
+E/auditd  ( 2157): In denial and Property audit_ondenial is set to 1 
+W/ContextImpl(  882): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1629 com.android.server.SEDenialService$AuditFileObserver.onEvent:76 android.os.FileObserver$ObserverThread.onEvent:122 android.os.FileObserver$ObserverThread.observe:-2 android.os.FileObserver$ObserverThread.run:85 
+D/SecurityLogAgent:SEDenialService(  882): audit.ondenial set to 0 after sending samsung.intent.action.knox.DENIAL_NOTIFICATION intent
+E/audit   ( 2157): type=1320 msg=audit(1457711594.392:330312): 
+D/SecurityLogAgent(10821):  SeDenialReceiver : Intent Received : samsung.intent.action.knox.DENIAL_NOTIFICATION
+D/SecurityLogAgent(10821):  SeDenialReceiver : File path = null
+D/StatusBar.NetworkController( 1179): onSignalStrengthsChanged signalStrength=SignalStrength: 15 99 -120 -160 -120 -1 -1 99 2147483647 2147483647 2147483647 -1 2147483647 0x4 gsm|lte level=4
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength: hasService=true ss=SignalStrength: 15 99 -120 -160 -120 -1 -1 99 2147483647 2147483647 2147483647 -1 2147483647 0x4 gsm|lte
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength: iconLevel=4
+D/StatusBar.NetworkController( 1179): updateTelephonySignalStrength, No signal level. mPhoneSignalIconId = com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mDataSignalIconId = com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mQSPhoneSignalIconId = com.android.systemui:drawable/ic_qs_signal_4 mContentDescriptionPhoneSignal = Pe≈Çen sygna≈Ç telefonu
+D/StatusBar.NetworkController( 1179): Nothing, mRoamingIconId = 0
+D/StatusBar.NetworkController( 1179): refreshViews connected={ } level=4 combinedSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mobileLabel=Plus wifiLabel= emergencyOnly=false combinedLabel=Brak po≈Ç. internetowego mAirplaneMode=false mDataActivity=0 mPhoneSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mQSPhoneSignalIconId=0x7f020115/com.android.systemui:drawable/ic_qs_signal_4 mDataDirectionIconId=0x0/(null) mDataSignalIconId=0x7f020442/com.android.systemui:drawable/stat_sys_signal_4_auto_rotate mDataTypeIconId=0x7f0202ae/com.android.systemui:drawable/stat_sys_data_connected_3g mQSDataTypeIconId=0x7f020114/com.android.systemui:drawable/ic_qs_signal_3g mNoSimIconId=0x0/(null) mWifiIconId=0x0/(null) mQSWifiIconId=0x0/(null) mWifiActivityIconId=0x7f020468/com.android.systemui:drawable/stat_sys_signal_inout mBluetoothTetherIconId=0x1080907/android:drawable/stat_sys_tether_bluetooth

@@ -1,0 +1,3 @@
+title=Sample app with img and button
+author=Marcin Jaroszewski
+orientation=portrait
